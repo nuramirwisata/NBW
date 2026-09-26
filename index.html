@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nuramir Wisata</title>
+
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f5f7fa;
+        color: #333;
+    }
+
+    header {
+        background: #1d4ed8;
+        color: white;
+        text-align: center;
+        padding: 55px 20px;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 38px;
+    }
+
+    header p {
+        margin-top: 12px;
+        font-size: 18px;
+    }
+
+    .container {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    .judul {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .judul h2 {
+        margin-bottom: 8px;
+        font-size: 30px;
+    }
+
+    .judul p {
+        color: #666;
+    }
+
+    .tour-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .tour-card {
+        background: white;
+        border-radius: 18px;
+        padding: 25px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        transition: 0.3s;
+    }
+
+    .tour-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    }
+
+    .tour-card h3 {
+        margin-top: 0;
+        font-size: 21px;
+    }
+
+    .tour-card p {
+    color: #555;
+    line-height: 1.7;
+      text-align: left;
+    font-size: 15px;
+}
+
+    .tombol {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 12px 20px;
+    background: #1d4ed8;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.tombol:hover {
+    transform: translateY(-2px);
+}
+
+    .tombol:hover {
+        background: #163fae;
+    }
+
+    .info-harga {
+        background: #eff6ff;
+        border-radius: 12px;
+        padding: 18px;
+        margin-bottom: 25px;
+        border: 1px solid #dbeafe;
+    }
+
+    .info-harga h3 {
+        margin-top: 0;
+        color: #1d4ed8;
+    }
+
+    .info-harga p {
+        margin: 8px 0;
+        color: #333;
+    }
+
+    .info-harga ul {
+        padding-left: 20px;
+    }
+   
+
+    /* Tampilan HP */
+
+    @media (max-width: 700px) {
+.harga-depan {
+    color: #1d4ed8 !important;
+    font-size: 17px !important;
+    margin-top: 10px;
+}
+
+.harga-depan b {
+    font-size: 20px;
+}
+      
+        header {
+            padding: 40px 15px;
+        }
+        header h1 {
+            font-size: 30px;
+        }
+
+        header p {
+            font-size: 16px;
+        }
+
+        .container {
+            margin: 25px auto;
+            padding: 0 15px;
+        }
+
+        .tour-list {
+            grid-template-columns: 1fr;
+        }
+
+        .tour-card {
+            padding: 20px;
+        }
+
+        .tour-card h3 {
+    margin-top: 0;
+    font-size: 23px;
+    color: #1d4ed8;
+    line-height: 1.4;
+}
+
+        .tombol {
+            width: 100%;
+        }
+    }
+      .info-harga ul {
+    text-align: left;
+}
+
+.info-harga li {
+    text-align: left;
+}
+      .info-include {
+    text-align: left !important;
+}
+
+.info-include h3 {
+    text-align: left !important;
+}
+
+.info-include li {
+    text-align: left !important;
+}
+      .tour-card ul,
+.tour-card li {
+    text-align: left !important;
+}
+      .tour-card h2,
+.tour-card h3 {
+    text-align: left !important;
+}
+</style>
+    
+</head>
+
+<body>
+
+    <header>
+        <h1>Nuramir Wisata</h1>
+        <p>Travel Around The World</p>
+    </header>
+
+    <div class="container">
+
+        <div class="judul">
+            <p>Klik lihat ittinerary pada paket tour pilihan kamu untuk melihat detail perjalanan
+</p>
+
+        <div class="tour-list">
+
+            <div class="tour-card">
+               <h3>10D Signature Turkiye</h3>
+
+<p>
+    Istanbul • Bursa • Kusadasi • Pamukkale • Cappadocia
+</p>
+
+<p class="harga-depan">
+    Mulai <b>Rp16.990.000</b> / pax
+</p>
+<button class="tombol" onclick="lihatTurkiye()">Lihat Itinerary
+</button>
+            </div>
+<div id="itineraryTurkiye"></div>
+            <div class="tour-card">
+                <h3>6D Halal Tour Korea</h3>
+    <p>
+        Ansan • Nami Island • Seoul
+    </p>
+<p class="harga-depan">
+    Mulai <b>Rp13.990.000</b> / pax
+</p>
+    <button class="tombol" onclick="lihatKorea()">
+        Lihat Itinerary
+    </button>
+             
+</div>
+
+<div id="itineraryKorea"></div>
+
+            <div class="tour-card">
+                  <h3>5D4N Amazing Bangkok - Pattaya</h3>
+
+    <p>
+        Bangkok • Pattaya • Wat Arun
+    </p>
+<p class="harga-depan">
+    Mulai <b>Rp6.990.000</b> / pax
+</p>
+    <button class="tombol" onclick="lihatThailand()">
+        Lihat Itinerary
+    </button>
+             
+</div>
+
+<div id="itineraryThailand"></div>
+            <div class="tour-card">
+                <h3>5D Hong Kong - Shenzhen - Zhuhai - Macau</h3>
+                <p>
+        
+                    Hong Kong • Shenzhen • Zhuhai • Macau
+                </p>
+                        <p class="harga-depan">
+    Mulai <b>Rp7.990.000</b> / pax
+</p>
+               <button class="tombol" onclick="lihatHongKong()">
+    Lihat Itinerary
+</button>
+             
+            </div>
+<div id="itineraryHongKong"></div>
+          <div class="tour-card">
+    <h3>10D Cost Saver West Europe</h3>
+    <p>
+        France • Belgium • Netherlands • Germany • Luxembourg •
+        Switzerland • Liechtenstein • Austria • Italy
+    </p>
+<p class="harga-depan">
+    Mulai <b>Rp50.388.000</b> / pax
+</p>
+    <button class="tombol" onclick="lihatEropa()">
+        Lihat Itinerary
+    </button>
+           
+</div>
+
+<div id="itineraryEropa"></div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
