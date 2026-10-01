@@ -12,20 +12,78 @@
         background: #f5f7fa;
         color: #333;
     }
-    header {
-        background: #1d4ed8;
-        color: white;
-        text-align: center;
-        padding: 55px 20px;
-    }
-    header h1 {
-        margin: 0;
-        font-size: 38px;
-    }
-    header p {
-        margin-top: 12px;
-        font-size: 18px;
-    }
+    /* ===== HERO NURAMIR ===== */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    padding: 55px 20px 90px;
+    background:
+    radial-gradient(circle at 15% 20%, rgba(255,255,255,0.18) 0 70px, transparent 71px),
+    radial-gradient(circle at 85% 15%, rgba(255,255,255,0.12) 0 100px, transparent 101px),
+    radial-gradient(circle at 75% 85%, rgba(255,255,255,0.10) 0 60px, transparent 61px),
+    linear-gradient(135deg, #69c3df, #4aaed0);
+}
+
+.logo-hero {
+    width: 170px;
+    height: 170px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 18px;
+    filter: drop-shadow(0 8px 12px rgba(0,0,0,0.18));
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.hero-subtitle {
+    margin: 10px 0 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.hero-tagline {
+    margin: 18px 0 25px;
+    font-size: 17px;
+    opacity: 0.95;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #c99a3d;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    transition: 0.25s;
+}
+
+.hero-button:hover {
+    background: #ad7f2d;
+    transform: translateY(-3px);
+}
+
+/* bentuk lengkung di bawah hero */
+.hero::after {
+    content: "";
+    position: absolute;
+    bottom: -45px;
+    left: -5%;
+    width: 110%;
+    height: 90px;
+    background: #f5f7fa;
+    border-radius: 50% 50% 0 0;
+}
     .container {
         max-width: 1100px;
         margin: 40px auto;
@@ -48,40 +106,52 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
     }
-    .tour-card {
-        background: white;
-        border-radius: 18px;
-        padding: 25px;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-        transition: 0.3s;
-    }
+   .tour-card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    transition: .3s;
+    text-align: left;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+}
     .tour-card:hover {
         transform: translateY(-4px);
         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
     }
     .tour-card h3 {
-        margin-top: 0;
-        font-size: 21px;
-    }
+    margin-top: 0;
+    font-size: 23px;
+    color: #1687ad;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
     .tour-card p {
     color: #555;
     line-height: 1.7;
       text-align: left;
     font-size: 15px;
 }
-    .tombol {
+   .tombol {
     display: inline-block;
-    margin-top: 12px;
-    padding: 12px 20px;
-    background: #1d4ed8;
+    margin-top: 14px;
+    padding: 12px 22px;
+    background: #c99a3d;
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 30px;
     cursor: pointer;
     font-size: 15px;
     font-weight: bold;
     text-decoration: none;
-    transition: 0.2s;
+    transition: .25s;
+    box-shadow: 0 5px 12px rgba(0,0,0,.12);
+}
+
+.tombol:hover {
+    background: #ad7f2d;
+    transform: translateY(-2px);
 }
 .tombol:hover {
     transform: translateY(-2px);
@@ -112,22 +182,37 @@
 
     @media (max-width: 700px) {
 .harga-depan {
-    color: #1d4ed8 !important;
-    font-size: 17px !important;
-    margin-top: 10px;
+    color: #b8860b !important;
+    font-size: 16px !important;
+    margin-top: 14px;
+    margin-bottom: 5px;
+    font-weight: 600;
 }
+
 .harga-depan b {
-    font-size: 20px;
-}     
-        header {
-            padding: 40px 15px;
-        }
-        header h1 {
-            font-size: 30px;
-        }
-        header p {
-            font-size: 16px;
-        }
+    font-size: 21px;
+    color: #a87400;
+}
+        .hero {
+    padding: 40px 15px 80px;
+}
+
+.logo-hero {
+    width: 135px;
+    height: 135px;
+}
+
+.hero h1 {
+    font-size: 30px;
+}
+
+.hero-subtitle {
+    font-size: 17px;
+}
+
+.hero-tagline {
+    font-size: 15px;
+}
         .container {
             margin: 25px auto;
             padding: 0 15px;
@@ -145,6 +230,17 @@
     line-height: 1.4;
 }
         .tombol {
+          .kenapa-nuramir {
+    padding: 25px 15px;
+}
+
+.kenapa-list {
+    grid-template-columns: 1fr;
+}
+
+.kenapa-item {
+    padding: 20px;
+}
             width: 100%;
         }
     }
@@ -171,17 +267,166 @@
 .tour-card h3 {
     text-align: left !important;
 }
+      footer {
+    margin-top: 60px;
+    padding: 45px 20px;
+    background: #69c3df;
+    color: white;
+    text-align: left;
+}
+
+footer h3 {
+    margin-top: 0;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+      .kenapa-nuramir {
+    text-align: left;
+    margin: 60px auto;
+    padding: 35px 25px;
+}
+
+.kenapa-nuramir h2 {
+    text-align: left;
+    color: #1687ad;
+    margin-bottom: 10px;
+}
+
+.kenapa-subtitle {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.kenapa-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.kenapa-item {
+    text-align: left;
+    background: white;
+    padding: 22px;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.07);
+}
+
+.kenapa-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.kenapa-item h3 {
+    margin: 0 0 8px;
+    color: #1687ad;
+}
+
+.kenapa-item p {
+    margin: 0;
+    line-height: 1.6;
+    color: #555;
+    font-size: 15px;
+}
+      .wa-float {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 27px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.20);
+    z-index: 999;
+    transition: .25s;
+}
+
+.wa-float:hover {
+    transform: scale(1.08);
+}
+      /* Perbaikan tampilan Kenapa Nuramir */
+.kenapa-list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.kenapa-item {
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+/* Tampilan HP */
+@media (max-width: 700px) {
+    .kenapa-nuramir {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 30px 15px;
+        margin: 40px auto;
+    }
+
+    .kenapa-list {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .kenapa-item {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
 </style>
 </head>
 <body>
-    <header>
-        <h1>Nuramir Wisata</h1>
-        <p>Travel Around The World</p>
-    </header>
-    <div class="container">
-        <div class="judul">
-            <p>Klik lihat ittinerary pada paket tour pilihan kamu untuk melihat detail perjalanan
-</p>
+    <header class="hero">
+
+   <img 
+    src="https://nuramirwisata.github.io/NBW/680e2b7a-76ac-4c0a-9d3a-8d14ff0ba492.png"
+    alt="Logo Nuramir Wisata"
+    class="logo-hero"
+>
+
+    <h1>Nuramir Wisata</h1>
+
+    <p class="hero-subtitle">
+        Travel Around The World
+    </p>
+
+    <p class="hero-tagline">
+        Jelajahi Dunia, Ciptakan Cerita ✈️
+    </p>
+
+    <a href="#pilihan-tour" class="hero-button">
+        Lihat Pilihan Tour
+    </a>
+
+</header>
+
+<div class="container" id="pilihan-tour">
+    <div class="judul">
+
+        <h2>Pilihan Tour</h2>
+
+        <p>
+            Pilih destinasi impianmu dan lihat detail itinerary perjalanan.
+        </p>
         <div class="tour-list">
             <div class="tour-card">
              <img 
@@ -273,6 +518,31 @@
     </button>    
 </div>
 <div id="itineraryEropa"></div>
+          <div class="tour-card">
+    <img 
+        <img 
+    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/The_Golden_Bridge,_Ba_Na_Hills,_Vietnam.jpg"
+    alt="Golden Bridge Vietnam"
+    style="width:100%; height:220px; object-fit:cover; border-radius:14px; margin-bottom:18px;"
+>
+
+    <h3>9D Winter Complete Vietnam</h3>
+
+    <p>
+        Danang • Hanoi • Sapa • Halong Bay • Saigon
+    </p>
+
+    <p class="harga-depan">
+        Mulai <b>Rp19.990.000</b> / pax
+    </p>
+
+    <button class="tombol" onclick="lihatVietnam()">
+        Lihat Itinerary
+    </button>
+</div>
+
+<div id="itineraryVietnam"></div>
+
         </div>
     </div>
       <footer>
@@ -298,7 +568,58 @@
     </p>
 
     <p>© 2026 Nuramir Wisata</p>
+        <section class="kenapa-nuramir">
+
+    <h2>Kenapa Nuramir Wisata?</h2>
+
+    <p class="kenapa-subtitle">
+        Kami membantu kamu merencanakan perjalanan dengan lebih mudah dan nyaman.
+    </p>
+
+    <div class="kenapa-list">
+
+        <div class="kenapa-item">
+            <div class="kenapa-icon">✈️</div>
+            <h3>Pilihan Destinasi</h3>
+            <p>
+                Beragam pilihan tour untuk menjelajahi destinasi impianmu.
+            </p>
+        </div>
+
+        <div class="kenapa-item">
+            <div class="kenapa-icon">📋</div>
+            <h3>Itinerary Jelas</h3>
+            <p>
+                Detail perjalanan tersedia agar kamu bisa mengetahui rencana tour.
+            </p>
+        </div>
+
+        <div class="kenapa-item">
+            <div class="kenapa-icon">🤝</div>
+            <h3>Pelayanan</h3>
+            <p>
+                Tim kami siap membantu memberikan informasi dan kebutuhan perjalanan.
+            </p>
+        </div>
+
+        <div class="kenapa-item">
+            <div class="kenapa-icon">💬</div>
+            <h3>Mudah Konsultasi</h3>
+            <p>
+                Hubungi kami untuk mendapatkan informasi paket dan perjalanan.
+            </p>
+        </div>
+
+    </div>
+
+</section>
 </footer>
     <script src="script.js"></script>
+  <a href="https://wa.me/62895354792080"
+   target="_blank"
+   class="wa-float"
+   aria-label="Chat WhatsApp">
+    💬
+</a>
 </body>
 </html>
