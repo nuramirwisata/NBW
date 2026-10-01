@@ -942,7 +942,6 @@ function lihatEropa() {
             <button class="tombol" onclick="tutupEropa()">
                 🔼 Tutup Itinerary
             </button>
-
         </div>
     `;
 }
@@ -950,3 +949,312 @@ function lihatEropa() {
 function tutupEropa() {
     document.getElementById("itineraryEropa").innerHTML = "";
 }
+
+function lihatVietnam() {
+    document.getElementById("itineraryVietnam").innerHTML = `
+        <div class="tour-card">
+
+            <h2>9D Winter Complete Vietnam</h2>
+
+            <p>
+                <b>Rute:</b>
+                Danang • Hanoi • Sapa • Halong Bay • Saigon
+            </p>
+
+            <div class="info-harga">
+                <h3>💰 Harga Paket</h3>
+
+                <p><b>Dewasa (Twin/Triple):</b> Rp19.990.000</p>
+                <p><b>Child Extra Bed:</b> Rp19.990.000</p>
+                <p><b>Child No Bed (&lt;6 Tahun):</b> Rp19.490.000</p>
+                <p><b>Single Supplement:</b> +Rp5.000.000</p>
+                <p><b>Infant (&lt;23 Bulan):</b> Rp4.500.000</p>
+                <p><b>Keberangkatan:</b> 7 Januari 2027</p>
+              
+                <p><b>Deposit:</b> Rp6.000.000</p>
+            </div>
+
+            <hr>
+
+            <h3>DAY 1 — DEPARTURE → DANANG</h3>
+
+            <p>
+                <b>Flight:</b> CGK (14.40) - SGN (17.55) by VN 630
+            </p>
+
+            <p>
+                <b>Flight:</b> SGN (20.55) - DAD (22.15) by VN 148
+            </p>
+
+            <p>
+                Berkumpul di Bandara Soekarno Hatta untuk penerbangan
+                menuju Danang dengan Vietnam Airlines.
+            </p>
+
+            <p>
+                Setibanya di Danang, peserta akan diantar menuju hotel
+                untuk check-in dan beristirahat.
+            </p>
+
+            <hr>
+
+            <h3>DAY 2 — DANANG → BA NA HILLS → HOI AN</h3>
+
+            <p>
+                Sarapan pagi di hotel. Perjalanan menuju Ba Na Hills
+                dan menaiki cable car.
+            </p>
+
+            <p>
+                Mengunjungi <b>Golden Bridge</b>, jembatan ikonik
+                yang ditopang oleh tangan raksasa.
+            </p>
+
+            <p>
+                Dilanjutkan mengunjungi Linh Ung Pagoda, Loc Uyen Garden
+                dan Quan Am Cac.
+            </p>
+
+            <p>
+                Kemudian menuju puncak Ba Na Hills. Peserta dapat menikmati
+                berbagai wahana di Fantasy Park atau mengunjungi
+                Ba Chua Thuong Ngan Temple.
+            </p>
+
+            <p>
+                Setelah itu menuju Hoi An untuk menjelajahi
+                <b>Hoi An Ancient Town</b>.
+            </p>
+
+            <ul>
+                <li>Chua Ong Pagoda</li>
+                <li>Chinese Assembly Halls</li>
+                <li>Tan Ky Ancestral House</li>
+                <li>Japanese Bridge</li>
+            </ul>
+
+            <hr>
+
+            <h3>DAY 3 — DANANG → HANOI</h3>
+
+            <p>
+                <b>Flight:</b> DAD (10.05) - HAN (11.30) by VN 164
+            </p>
+
+            <p>
+                Sarapan pagi di hotel. Diantar menuju bandara untuk
+                penerbangan menuju Hanoi.
+            </p>
+
+            <p>
+                Setibanya di Hanoi, perjalanan dilanjutkan menuju
+                <b>Hanoi Old Quarter</b>.
+            </p>
+
+            <p>
+                Mengunjungi <b>Hoan Kiem Lake</b> dan menikmati kopi khas
+                Vietnam di Train Street.
+            </p>
+
+            <hr>
+
+            <h3>DAY 4 — HANOI → SAPA → CAT CAT VILLAGE</h3>
+
+            <p>
+                Sarapan pagi di hotel. Perjalanan menuju Sapa sambil
+                menikmati pemandangan pegunungan dan pedesaan.
+            </p>
+
+            <p>
+                Mengunjungi <b>Cat Cat Village</b>, desa tradisional
+                dari suku H'Mong.
+            </p>
+
+            <p>
+                Melihat Hydroelectric Power Station yang dibangun oleh
+                Perancis atau menikmati pemandangan air terjun.
+            </p>
+
+            <p>
+                Kembali ke Sapa dan mengunjungi <b>Sapa Church</b>
+                serta Sapa Lake.
+            </p>
+
+            <hr>
+
+            <h3>DAY 5 — SAPA → FANSIPAN → HANOI</h3>
+
+            <p>
+                Sarapan pagi di hotel. Perjalanan menuju Gunung Fansipan,
+                yang dikenal sebagai <b>The Roof of Indochina</b>.
+            </p>
+
+            <p>
+                Menaiki cable car dan menikmati panorama
+                Pegunungan Hoang Lien Son.
+            </p>
+
+            <p>
+                Setibanya di ketinggian sekitar 2.800 meter,
+                peserta dapat berfoto dan mengunjungi kompleks pagoda.
+            </p>
+
+            <p>
+                Kemudian mendaki sekitar 600 anak tangga menuju
+                puncak Fansipan. Tersedia pilihan Funicular.
+            </p>
+
+            <p>
+                Setelah selesai, kembali ke Hanoi untuk check-in
+                dan beristirahat.
+            </p>
+
+            <hr>
+
+            <h3>DAY 6 — HANOI → HALONG ISLAND TOUR → HANOI</h3>
+
+            <p>
+                Sarapan pagi di hotel. Perjalanan menuju Halong.
+            </p>
+
+            <p>
+                Setibanya di Halong, menaiki kapal untuk mengelilingi
+                pulau sekaligus menikmati makan siang.
+            </p>
+
+            <p>
+                Mengunjungi <b>Thien Cung Cave</b> dan
+                <b>Dau Go Grotto</b>.
+            </p>
+
+            <p>
+                Berkeliling menyusuri bagian dari World Nature Heritage:
+            </p>
+
+            <ul>
+                <li>Incense Bowl Islet</li>
+                <li>Cock Fighting Islet</li>
+                <li>Sail Islet</li>
+                <li>Turtle Island</li>
+            </ul>
+
+            <hr>
+
+            <h3>DAY 7 — HANOI → SAIGON</h3>
+
+            <p>
+                <b>Flight:</b> HAN (20.30) - SGN (22.45) by VN 265
+            </p>
+
+            <p>
+                Sarapan pagi di hotel.
+            </p>
+
+            <p>
+                Mengunjungi <b>Ho Chi Minh Mausoleum</b> dan
+                <b>Tran Quoc Pagoda</b>.
+            </p>
+
+            <p>
+                Kemudian berbelanja di Lotte Mart.
+                Pada sore hari menuju bandara untuk penerbangan ke Saigon.
+            </p>
+
+            <hr>
+
+            <h3>DAY 8 — SAIGON → MEKONG DELTA → SAIGON</h3>
+
+            <p>
+                Sarapan pagi di hotel. Perjalanan menuju My Tho untuk
+                menaiki perahu dan menyusuri Mekong Delta.
+            </p>
+
+            <p>
+                Menikmati panorama:
+            </p>
+
+            <ul>
+                <li>Dragon Island</li>
+                <li>Unicorn Island</li>
+                <li>Turtle Island</li>
+                <li>Phoenix Island</li>
+            </ul>
+
+            <p>
+                Mengunjungi peternakan lebah dan mencicipi teh madu,
+                melihat pabrik permen kelapa, menikmati buah tropis
+                serta pertunjukan musik tradisional lokal.
+            </p>
+
+            <p>
+                Kemudian menaiki perahu sampan untuk menyusuri kanal alami.
+            </p>
+
+            <hr>
+
+            <h3>DAY 9 — SAIGON → DEPARTURE</h3>
+
+            <p>
+                <b>Flight:</b> SGN (10.45) - CGK (13.50) by VN 631
+            </p>
+
+            <p>
+                Sarapan pagi di hotel. Diantar menuju bandara untuk
+                penerbangan kembali ke Indonesia.
+            </p>
+
+            <hr>
+
+            <div class="info-include">
+
+                <h3>📋 Harga Termasuk</h3>
+
+                <ul>
+                    <li>Tiket International Jakarta-Danang & Saigon-Jakarta by Vietnam Airlines, Economy termasuk taxes internasional</li>
+                    <li>Tiket grup fixed date & no extend</li>
+                    <li>Tiket domestik Danang-Hanoi dan Hanoi-Saigon</li>
+                    <li>Bagasi sesuai dengan ketentuan Airlines</li>
+                    <li>Akomodasi hotel *3 setaraf (Twin / Triple)</li>
+                    <li>Transportasi bus pariwisata & tiket masuk objek wisata</li>
+                    <li>Acara tour & makan sesuai program paket tour</li>
+                    <li>Mineral water 1 botol per hari</li>
+                    <li>Tour Leader</li>
+                    <li>Travel Kits (Luggage Tag)</li>
+                    <li>Travel Insurance sampai usia 82 tahun</li>
+                </ul>
+
+                <h3>❌ Harga Tidak Termasuk</h3>
+
+                <ul>
+                    <li>Tipping Tour Leader, Local Guide & Driver: Rp1.000.000 / pax</li>
+                    <li>Tips Porter Hotel</li>
+                    <li>Mini Bar, Laundry, Telepon dan kelebihan bagasi</li>
+                    <li>PPN 1,1%</li>
+                </ul>
+
+                <h3>Optional</h3>
+
+                <ul>
+                    <li>Rental Wifi / SIM Card Portable</li>
+                    <li>Funicular to the peak of Fansipan USD 14 / pax</li>
+                </ul>
+
+            </div>
+
+            <p>
+                Jadwal dapat berubah sewaktu-waktu sesuai dengan operasional.
+            </p>
+
+            <button class="tombol" onclick="tutupVietnam()">
+                🔼 Tutup Itinerary
+            </button>
+
+        </div>
+    `;
+}
+
+function tutupVietnam() {
+    document.getElementById("itineraryVietnam").innerHTML = "";
+}
+ 
+        
