@@ -1363,4 +1363,5 @@ function tutupVietnam() {
 function tutupCruise() {
     document.getElementById("itineraryCruise").innerHTML = "";
 }
-        
+window.lihatCruise = lihatCruise;
+window.tutupCruise = tutupCruise;        
