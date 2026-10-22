@@ -1256,5 +1256,111 @@ function lihatVietnam() {
 function tutupVietnam() {
     document.getElementById("itineraryVietnam").innerHTML = "";
 }
- 
+ function lihatCruise() {
+    document.getElementById("itineraryCruise").innerHTML = `
+        <div class="tour-card">
+
+            <h2> 5D4N Singapore Cruise</h2>
+
+            <div class="info-harga">
+                <h3> Informasi Harga</h3>
+
+                <p><b>Keberangkatan:</b> 7 & 11 Maret 2027</p>
+                <p><b>Rute:</b> Jakarta – Singapore – Jakarta</p>
+                <p><b>Durasi:</b> 5 Hari 4 Malam</p>
+
+                <hr>
+
+                <h3> Pilihan Kabin</h3>
+
+                <p><b>Interior Stateroom</b></p>
+                <ul>
+                    <li>Pax 1–2: ±Rp10.365.000/pax</li>
+                    <li>Pax 3–4: ±Rp6.450.000/pax</li>
+                </ul>
+
+                <p><b>Oceanview Stateroom</b></p>
+                <ul>
+                    <li>Pax 1–2: ±Rp12.325.000/pax</li>
+                    <li>Pax 3–4: ±Rp7.431.000/pax</li>
+                </ul>
+
+                <p><b>Balcony Stateroom</b></p>
+                <ul>
+                    <li>Pax 1–2: ±Rp14.287.000/pax</li>
+                    <li>Pax 3–4: ±Rp8.411.000/pax</li>
+                </ul>
+
+                <hr>
+
+                <h3> Biaya Tambahan</h3>
+                <ul>
+                    <li>Gratuity Interior & Oceanview: ±Rp1.513.000/pax</li>
+                    <li>Gratuity Balcony: ±Rp1.849.000/pax</li>
+                    <li>Fuel Surcharge: ±Rp560.000/pax</li>
+                </ul>
+
+                <p>
+                    <b>Catatan:</b> Gratuity dan fuel surcharge
+                    dibayarkan di atas kapal. Harga mengikuti kurs
+                    dan ketentuan yang berlaku.
+                </p>
+            </div>
+
+            <hr>
+
+            <h3>DAY 1 — JAKARTA</h3>
+            <p>
+                Berkumpul di Pelabuhan Tanjung Priok, Jakarta.
+                Kapal dijadwalkan berangkat pukul 22.00
+                (waktu boarding 21.00).
+            </p>
+
+            <hr>
+
+            <h3>DAY 2 — AT SEA</h3>
+            <p>
+                Nikmati waktu di atas kapal selama perjalanan laut.
+                Manfaatkan fasilitas dan aktivitas yang tersedia
+                di kapal sesuai ketentuan operator.
+            </p>
+
+            <hr>
+
+            <h3>DAY 3 — SINGAPORE</h3>
+            <p>
+                Kapal tiba di Singapore pukul 08.00 dan dijadwalkan
+                berangkat kembali pukul 21.00.
+                Waktu untuk menikmati Singapore sesuai jadwal
+                dan ketentuan operator kapal.
+            </p>
+
+            <hr>
+
+            <h3>DAY 4 — AT SEA</h3>
+            <p>
+                Kembali menikmati perjalanan laut dan waktu santai
+                di atas kapal menuju Jakarta.
+            </p>
+
+            <hr>
+
+            <h3>DAY 5 — JAKARTA</h3>
+            <p>
+                Kapal dijadwalkan tiba di Jakarta pukul 08.00
+                (perkiraan waktu 07.00 pada tabel jadwal).
+                Perjalanan cruise berakhir.
+            </p>
+
+            <button class="tombol" onclick="tutupCruise()">
+                🔼 Tutup Itinerary
+            </button>
+
+        </div>
+    `;
+}
+
+function tutupCruise() {
+    document.getElementById("itineraryCruise").innerHTML = "";
+}
         
