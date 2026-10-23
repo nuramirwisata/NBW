@@ -1256,6 +1256,127 @@ function lihatVietnam() {
 function tutupVietnam() {
     document.getElementById("itineraryVietnam").innerHTML = "";
 }
+
+function lihatAzerbaijan() {
+    document.getElementById("itineraryAzerbaijan").innerHTML = `
+        <div class="tour-card">
+
+            <h2>5D Azerbaijan</h2>
+            <p><b>Periode:</b> 2–7 Januari 2027</p>
+            <p><b>Maskapai:</b> Emirates</p>
+            <p><b>Rute:</b> Jakarta – Baku – Jakarta</p>
+
+            <hr>
+
+            <h3>Hari 1 – Arrival in Baku & Baku City Tour</h3>
+            <p>
+                Tiba di Heydar Aliyev International Airport.
+                Penjemputan oleh perwakilan lokal, transfer ke hotel,
+                dan check-in.
+            </p>
+            <ul>
+                <li>Highland Park</li>
+                <li>Flame Towers</li>
+                <li>Baku Boulevard</li>
+                <li>Carpet Museum</li>
+                <li>Little Venice</li>
+                <li>Nizami Street</li>
+                <li>Maiden Tower</li>
+            </ul>
+            <p>Menginap di Baku.</p>
+
+            <hr>
+
+            <h3>Hari 2 – Absheron & Gobustan Tour</h3>
+            <ul>
+                <li>Gobustan National Park (Rock Art)</li>
+                <li>Mud Volcanoes</li>
+                <li>Ateshgah Fire Temple</li>
+                <li>Yanar Dag (Fire Mountain)</li>
+                <li>Heydar Aliyev Center (photo stop)</li>
+            </ul>
+            <p>Menginap di Baku.</p>
+
+            <hr>
+
+            <h3>Hari 3 – Quba & Shahdag Tour</h3>
+            <ul>
+                <li>Perjalanan menuju Quba</li>
+                <li>Qechresh Forest</li>
+                <li>Red Village</li>
+                <li>Shahdag Mountain Resort</li>
+                <li>Cable car (opsional)</li>
+            </ul>
+            <p>Menginap di Baku.</p>
+
+            <hr>
+
+            <h3>Hari 4 – Gabala Tour</h3>
+            <ul>
+                <li>Perjalanan melalui Shamakhi</li>
+                <li>Juma Mosque</li>
+                <li>Seven Beauties Waterfall</li>
+                <li>Nohur Lake</li>
+                <li>Tufandag Cable Car</li>
+                <li>Gabala City Tour</li>
+            </ul>
+            <p>Menginap di Baku.</p>
+
+            <hr>
+
+            <h3>Hari 5 – Departure</h3>
+            <p>
+                Sarapan di hotel, check-out, kemudian
+                transfer ke bandara untuk penerbangan pulang.
+            </p>
+
+            <hr>
+
+            <h3>Informasi Harga</h3>
+            <p><b>Harga Tour:</b> Rp27.546.554 / pax</p>
+
+            <hr>
+
+            <h3>Termasuk</h3>
+            <ul>
+                <li>Akomodasi hotel 4 malam di Baku</li>
+                <li>Sarapan, makan siang, dan makan malam setiap hari</li>
+                <li>Transportasi privat untuk tour dan transfer</li>
+                <li>Pengemudi profesional</li>
+                <li>Seluruh pajak yang tercantum dalam paket</li>
+                <li>Penjemputan dan pengantaran bandara</li>
+                <li>Layanan bantuan 24/7</li>
+            </ul>
+
+            <hr>
+
+            <h3>Tidak Termasuk</h3>
+            <ul>
+                <li>Pengeluaran pribadi</li>
+                <li>Aktivitas opsional, termasuk cable car</li>
+                <li>Biaya lain yang tidak disebutkan dalam bagian Termasuk</li>
+            </ul>
+
+            <p><i>
+                Harga dan ketersediaan dapat berubah.
+                Silakan konfirmasi sebelum melakukan pemesanan.
+            </i></p>
+
+            <button class="tombol" onclick="tutupAzerbaijan()">
+                🔼 Tutup Itinerary
+            </button>
+
+        </div>
+    `;
+}
+
+function tutupAzerbaijan() {
+    document.getElementById("itineraryAzerbaijan").innerHTML = "";
+}
+
+window.lihatAzerbaijan = lihatAzerbaijan;
+window.tutupAzerbaijan = tutupAzerbaijan;
+
  function lihatCruise() {
     document.getElementById("itineraryCruise").innerHTML = `
         <div class="tour-card">
@@ -1363,5 +1484,5 @@ function tutupVietnam() {
 function tutupCruise() {
     document.getElementById("itineraryCruise").innerHTML = "";
 }
-window.lihatCruise = lihatCruise;
-window.tutupCruise = tutupCruise;        
+        window.lihatCruise = lihatCruise;
+window.tutupCruise = tutupCruise;
