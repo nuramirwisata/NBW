@@ -1257,77 +1257,44 @@ function tutupVietnam() {
     document.getElementById("itineraryVietnam").innerHTML = "";
 }
 
+
 function lihatAzerbaijan() {
-    const tempat = document.getElementById("itineraryAzerbaijan");
-
-    if (!tempat) {
-        alert("Tempat itinerary Azerbaijan tidak ditemukan.");
-        return;
-    }
-
-    tempat.innerHTML = `
+    document.getElementById("itineraryAzerbaijan").innerHTML = `
         <div class="tour-card">
             <h2>5D Azerbaijan</h2>
-            <p><b>Periode:</b> 2–7 Januari 2027</p>
-            <p><b>Maskapai:</b> Emirates</p>
-            <p><b>Rute:</b> Jakarta – Baku – Jakarta</p>
+            <p>Baku • Quba • Shahdag • Gabala</p>
 
-            <hr>
-            <h3>Hari 1 – Baku City Tour</h3>
-            <p>Highland Park, Flame Towers, Baku Boulevard,
-            Carpet Museum, Little Venice, Nizami Street,
-            dan Maiden Tower.</p>
+            <h3>Hari 1 – Baku</h3>
+            <p>City tour Baku.</p>
 
-            <hr>
             <h3>Hari 2 – Absheron & Gobustan</h3>
-            <p>Gobustan National Park, Mud Volcanoes,
-            Ateshgah Fire Temple, Yanar Dag, dan
-            Heydar Aliyev Center.</p>
+            <p>Gobustan, Mud Volcanoes, Ateshgah, dan Yanar Dag.</p>
 
-            <hr>
             <h3>Hari 3 – Quba & Shahdag</h3>
-            <p>Qechresh Forest, Red Village,
-            Shahdag Mountain Resort, dan cable car opsional.</p>
+            <p>Qechresh Forest, Red Village, dan Shahdag.</p>
 
-            <hr>
             <h3>Hari 4 – Gabala</h3>
-            <p>Juma Mosque, Seven Beauties Waterfall,
-            Nohur Lake, Tufandag Cable Car, dan Gabala City Tour.</p>
+            <p>Juma Mosque, Seven Beauties Waterfall, dan Nohur Lake.</p>
 
-            <hr>
-            <h3>Hari 5 – Departure</h3>
-            <p>Sarapan, check-out hotel, lalu transfer ke bandara.</p>
+            <h3>Hari 5 – Kepulangan</h3>
+            <p>Sarapan, check-out, dan transfer ke bandara.</p>
 
-            <hr>
-            <h3>Informasi Harga</h3>
-            <p><b>Harga Tour:</b> Rp27.546.554 / pax</p>
-
-            <hr>
-            <h3>Termasuk</h3>
-            <ul>
-                <li>Hotel 4 malam di Baku</li>
-                <li>Sarapan, makan siang, dan makan malam</li>
-                <li>Transportasi privat dan seluruh transfer</li>
-                <li>Pengemudi profesional</li>
-                <li>Pajak yang tercantum dalam paket</li>
-                <li>Penjemputan dan pengantaran bandara</li>
-                <li>Layanan bantuan 24/7</li>
-            </ul>
-
-            <hr>
-            <h3>Tidak Termasuk</h3>
-            <ul>
-                <li>Pengeluaran pribadi</li>
-                <li>Aktivitas opsional</li>
-                <li>Biaya yang tidak tercantum pada bagian Termasuk</li>
-            </ul>
+            <p><b>Harga:</b> Rp27.546.554 / pax</p>
 
             <button class="tombol" onclick="tutupAzerbaijan()">
-                🔼 Tutup Itinerary
+                Tutup Itinerary
             </button>
         </div>
     `;
 }
+
+function tutupAzerbaijan() {
+    document.getElementById("itineraryAzerbaijan").innerHTML = "";
+}
+
+window.lihatAzerbaijan = lihatAzerbaijan;
+window.tutupAzerbaijan = tutupAzerbaijan;
+
  function lihatCruise() {
     document.getElementById("itineraryCruise").innerHTML = `
         <div class="tour-card">
