@@ -1444,10 +1444,3 @@ function tutupCruise() {
 }
         window.lihatCruise = lihatCruise;
 window.tutupCruise = tutupCruise;
-window.lihatAzerbaijan = function() {
-    lihatAzerbaijan();
-};
-
-window.tutupAzerbaijan = function() {
-    tutupAzerbaijan();
-};
