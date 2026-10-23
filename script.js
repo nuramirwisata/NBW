@@ -1286,6 +1286,32 @@ function lihatAzerbaijan() {
 
             <p><b>Harga:</b> Rp27.546.554 / pax</p>
 
+<div class="info-include">
+
+    <h3>📋 Harga Termasuk</h3>
+    <ul>
+        <li>Akomodasi hotel selama 4 malam di Baku</li>
+        <li>Sarapan setiap hari</li>
+        <li>Makan siang setiap hari</li>
+        <li>Makan malam setiap hari</li>
+        <li>Transportasi privat untuk seluruh tour dan transfer</li>
+        <li>Pengemudi profesional</li>
+        <li>Seluruh pajak yang tercantum dalam paket</li>
+        <li>Penjemputan dan pengantaran bandara</li>
+        <li>Layanan bantuan 24/7</li>
+    </ul>
+
+    <hr>
+
+    <h3>❌ Harga Tidak Termasuk</h3>
+    <ul>
+        <li>Pengeluaran pribadi selama perjalanan</li>
+        <li>Aktivitas opsional, termasuk cable car di Shahdag</li>
+        <li>Biaya lain yang tidak disebutkan dalam bagian Harga Termasuk</li>
+    </ul>
+
+</div>
+
             <button class="tombol" onclick="tutupAzerbaijan()">
                 🔼 Tutup Itinerary
             </button>
