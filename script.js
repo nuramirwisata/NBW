@@ -1256,10 +1256,15 @@ function lihatVietnam() {
 function tutupVietnam() {
     document.getElementById("itineraryVietnam").innerHTML = "";
 }
-
-
 function lihatAzerbaijan() {
-    document.getElementById("itineraryAzerbaijan").innerHTML = `
+    const tempat = document.getElementById("itineraryAzerbaijan");
+
+    if (!tempat) {
+        console.error('Elemen "itineraryAzerbaijan" tidak ditemukan di HTML.');
+        return;
+    }
+
+    tempat.innerHTML = `
         <div class="tour-card">
             <h2>5D Azerbaijan</h2>
             <p>Baku • Quba • Shahdag • Gabala</p>
@@ -1282,19 +1287,22 @@ function lihatAzerbaijan() {
             <p><b>Harga:</b> Rp27.546.554 / pax</p>
 
             <button class="tombol" onclick="tutupAzerbaijan()">
-                Tutup Itinerary
+                🔼 Tutup Itinerary
             </button>
         </div>
     `;
 }
 
 function tutupAzerbaijan() {
-    document.getElementById("itineraryAzerbaijan").innerHTML = "";
+    const tempat = document.getElementById("itineraryAzerbaijan");
+
+    if (tempat) {
+        tempat.innerHTML = "";
+    }
 }
 
 window.lihatAzerbaijan = lihatAzerbaijan;
 window.tutupAzerbaijan = tutupAzerbaijan;
-
  function lihatCruise() {
     document.getElementById("itineraryCruise").innerHTML = `
         <div class="tour-card">
@@ -1398,13 +1406,6 @@ window.tutupAzerbaijan = tutupAzerbaijan;
         </div>
     `;
 }
-
-function tutupAzerbaijan() {
-    document.getElementById("itineraryAzerbaijan").innerHTML = "";
-}
-
-window.lihatAzerbaijan = lihatAzerbaijan;
-window.tutupAzerbaijan = tutupAzerbaijan;
 
 function tutupCruise() {
     document.getElementById("itineraryCruise").innerHTML = "";
