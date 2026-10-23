@@ -1432,6 +1432,13 @@ function lihatAzerbaijan() {
     `;
 }
 
+function tutupAzerbaijan() {
+    document.getElementById("itineraryAzerbaijan").innerHTML = "";
+}
+
+window.lihatAzerbaijan = lihatAzerbaijan;
+window.tutupAzerbaijan = tutupAzerbaijan;
+
 function tutupCruise() {
     document.getElementById("itineraryCruise").innerHTML = "";
 }
