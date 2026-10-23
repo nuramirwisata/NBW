@@ -1482,7 +1482,10 @@ function tutupCruise() {
 }
         window.lihatCruise = lihatCruise;
 window.tutupCruise = tutupCruise;
+window.lihatAzerbaijan = function() {
+    lihatAzerbaijan();
+};
 
-
-window.lihatAzerbaijan = lihatAzerbaijan;
-window.tutupAzerbaijan = tutupAzerbaijan;
+window.tutupAzerbaijan = function() {
+    tutupAzerbaijan();
+};
