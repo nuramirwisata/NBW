@@ -1373,10 +1373,6 @@ function lihatAzerbaijan() {
 function tutupAzerbaijan() {
     document.getElementById("itineraryAzerbaijan").innerHTML = "";
 }
-
-window.lihatAzerbaijan = lihatAzerbaijan;
-window.tutupAzerbaijan = tutupAzerbaijan;
-
  function lihatCruise() {
     document.getElementById("itineraryCruise").innerHTML = `
         <div class="tour-card">
@@ -1486,3 +1482,7 @@ function tutupCruise() {
 }
         window.lihatCruise = lihatCruise;
 window.tutupCruise = tutupCruise;
+
+
+window.lihatAzerbaijan = lihatAzerbaijan;
+window.tutupAzerbaijan = tutupAzerbaijan;
